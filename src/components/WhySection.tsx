@@ -37,17 +37,19 @@ const WhySection = () => {
   }, []);
 
   return (
-    <section className="section bg-rebels-gray">
+    <section className="section bg-gradient-to-b from-[#f0f7ff] to-white">
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
-          <div id="main" className={visibleSections.main ? 'animate-fade-in-up' : 'opacity-0'}>
-            <h2 className="text-center mb-12">Why I Do This</h2>
-          </div>
-          
           {/* Section 1 */}
-          <Card id="section1" className={`border-0 shadow-lg mb-12 ${visibleSections.section1 ? 'animate-fade-in-up' : 'opacity-0'}`}>
+          <Card id="section1" 
+            className={`border-0 shadow-xl mb-12 transform transition-all duration-700 ${
+              visibleSections.section1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
+          >
             <CardContent className="p-8">
-              <h3 className="text-rebels-blue mb-4">Small business owners are busy — so I take the first step.</h3>
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-rebels-blue to-rebels-darkblue bg-clip-text text-transparent mb-4">
+                Small business owners are busy — so I take the first step.
+              </h3>
               <p className="text-lg leading-relaxed mb-4">
                 Running a small business means wearing ten hats at once. Whether you're a window cleaner, florist, electrician, or café owner, you probably don't have time to go chasing web designers.
               </p>
@@ -58,9 +60,15 @@ const WhySection = () => {
           </Card>
           
           {/* Section 2 */}
-          <Card id="section2" className={`border-0 shadow-lg mb-12 ${visibleSections.section2 ? 'animate-fade-in-up' : 'opacity-0'}`} style={{animationDelay: "0.2s"}}>
+          <Card id="section2" 
+            className={`border-0 shadow-xl mb-12 transform transition-all duration-700 delay-200 ${
+              visibleSections.section2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
+          >
             <CardContent className="p-8">
-              <h3 className="text-rebels-blue mb-4">Why small businesses?</h3>
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-rebels-blue to-rebels-darkblue bg-clip-text text-transparent mb-4">
+                Why small businesses?
+              </h3>
               <p className="text-lg leading-relaxed mb-4">
                 Because small businesses are the heart of their communities — and they deserve to look the part online.
               </p>
@@ -71,9 +79,15 @@ const WhySection = () => {
           </Card>
           
           {/* Section 3 */}
-          <Card id="section3" className={`border-0 shadow-lg mb-12 ${visibleSections.section3 ? 'animate-fade-in-up' : 'opacity-0'}`} style={{animationDelay: "0.4s"}}>
+          <Card id="section3" 
+            className={`border-0 shadow-xl mb-12 transform transition-all duration-700 delay-400 ${
+              visibleSections.section3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
+          >
             <CardContent className="p-8">
-              <h3 className="text-rebels-blue mb-4">Why build the site before reaching out?</h3>
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-rebels-blue to-rebels-darkblue bg-clip-text text-transparent mb-4">
+                Why build the site before reaching out?
+              </h3>
               <p className="text-lg leading-relaxed mb-4">
                 Because I believe in showing, not telling.
               </p>
@@ -84,10 +98,14 @@ const WhySection = () => {
           </Card>
           
           {/* Bottom line */}
-          <Card id="section4" className={`border-0 shadow-lg ${visibleSections.section4 ? 'animate-fade-in-up' : 'opacity-0'}`} style={{animationDelay: "0.6s"}}>
-            <CardContent className="p-8">
-              <h3 className="text-rebels-blue mb-4">Bottom line:</h3>
-              <p className="text-lg font-medium mb-4">
+          <Card id="section4" 
+            className={`border-0 shadow-xl transform transition-all duration-700 delay-600 ${
+              visibleSections.section4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
+          >
+            <CardContent className="p-8 bg-gradient-to-br from-rebels-blue to-rebels-darkblue text-white">
+              <h3 className="text-2xl font-bold mb-4">Bottom line:</h3>
+              <p className="text-xl font-medium mb-4">
                 I help small businesses level up their online presence with clean, modern websites.
               </p>
               <p className="text-lg italic">
