@@ -11,8 +11,15 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="min-h-screen pt-28 pb-16 flex items-center bg-gradient-to-br from-rebels-gray via-white to-[#f0f7ff]">
-      <div className="container mx-auto">
+    <section className="min-h-screen pt-28 pb-16 flex items-center bg-gradient-to-br from-[#eef7ff] via-white to-[#f0f7ff] relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-10 w-96 h-96 rounded-full bg-rebels-blue/5 animate-float"></div>
+        <div className="absolute bottom-1/4 right-10 w-80 h-80 rounded-full bg-rebels-lightblue/10 animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-2/3 left-1/3 w-64 h-64 rounded-full bg-rebels-blue/5 animate-float" style={{ animationDelay: '1s' }}></div>
+      </div>
+      
+      <div className="container mx-auto relative z-10">
         <div className="max-w-3xl mx-auto text-center space-y-8">
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0 translate-y-10'}`}>
             <h1 className="font-bold leading-tight">

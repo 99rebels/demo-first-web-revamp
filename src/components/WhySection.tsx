@@ -37,17 +37,25 @@ const WhySection = () => {
   }, []);
 
   return (
-    <section className="section bg-gradient-to-b from-[#f0f7ff] to-white">
-      <div className="container mx-auto">
+    <section className="section bg-gradient-to-b from-[#f0f7ff] to-white relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+        <div className="absolute top-20 right-5% w-72 h-72 rounded-full bg-rebels-blue/5 animate-float"></div>
+        <div className="absolute bottom-40 left-10% w-80 h-80 rounded-full bg-rebels-lightblue/10 animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/2 right-15% w-64 h-64 rounded-full bg-rebels-blue/5 animate-float" style={{ animationDelay: '1s' }}></div>
+      </div>
+      
+      <div className="container mx-auto relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Section 1 */}
           <Card id="section1" 
             className={`border-0 shadow-xl mb-12 transform transition-all duration-700 ${
               visibleSections.section1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
+            } hover:shadow-2xl hover:shadow-rebels-blue/10 transition-all duration-300`}
           >
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-rebels-blue to-rebels-darkblue bg-clip-text text-transparent mb-4">
+            <CardContent className="p-8 bg-white/90 backdrop-blur-sm">
+              <div className="absolute -top-4 -left-4 w-12 h-12 bg-rebels-blue rounded-full flex items-center justify-center text-white font-bold text-lg">1</div>
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-rebels-blue to-rebels-darkblue bg-clip-text text-transparent mb-4 pl-6">
                 Small business owners are busy — so I take the first step.
               </h3>
               <p className="text-lg leading-relaxed mb-4">
@@ -63,10 +71,11 @@ const WhySection = () => {
           <Card id="section2" 
             className={`border-0 shadow-xl mb-12 transform transition-all duration-700 delay-200 ${
               visibleSections.section2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
+            } hover:shadow-2xl hover:shadow-rebels-blue/10 transition-all duration-300`}
           >
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-rebels-blue to-rebels-darkblue bg-clip-text text-transparent mb-4">
+            <CardContent className="p-8 bg-white/90 backdrop-blur-sm">
+              <div className="absolute -top-4 -left-4 w-12 h-12 bg-rebels-blue rounded-full flex items-center justify-center text-white font-bold text-lg">2</div>
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-rebels-blue to-rebels-darkblue bg-clip-text text-transparent mb-4 pl-6">
                 Why small businesses?
               </h3>
               <p className="text-lg leading-relaxed mb-4">
@@ -82,10 +91,11 @@ const WhySection = () => {
           <Card id="section3" 
             className={`border-0 shadow-xl mb-12 transform transition-all duration-700 delay-400 ${
               visibleSections.section3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
+            } hover:shadow-2xl hover:shadow-rebels-blue/10 transition-all duration-300`}
           >
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-rebels-blue to-rebels-darkblue bg-clip-text text-transparent mb-4">
+            <CardContent className="p-8 bg-white/90 backdrop-blur-sm">
+              <div className="absolute -top-4 -left-4 w-12 h-12 bg-rebels-blue rounded-full flex items-center justify-center text-white font-bold text-lg">3</div>
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-rebels-blue to-rebels-darkblue bg-clip-text text-transparent mb-4 pl-6">
                 Why build the site before reaching out?
               </h3>
               <p className="text-lg leading-relaxed mb-4">
@@ -101,16 +111,20 @@ const WhySection = () => {
           <Card id="section4" 
             className={`border-0 shadow-xl transform transition-all duration-700 delay-600 ${
               visibleSections.section4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
+            } hover:shadow-2xl hover:shadow-rebels-blue/10 transition-all duration-300`}
           >
-            <CardContent className="p-8 bg-gradient-to-br from-rebels-blue to-rebels-darkblue text-white">
-              <h3 className="text-2xl font-bold mb-4">Bottom line:</h3>
-              <p className="text-xl font-medium mb-4">
-                I help small businesses level up their online presence with clean, modern websites.
-              </p>
-              <p className="text-lg italic">
-                You've already built something real. I'm just here to make sure your website shows that.
-              </p>
+            <CardContent className="p-8 bg-gradient-to-br from-rebels-blue to-rebels-darkblue text-white relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32"></div>
+              <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full -ml-24 -mb-24"></div>
+              <div className="relative z-10">
+                <h3 className="text-2xl font-bold mb-4">Bottom line:</h3>
+                <p className="text-xl font-medium mb-4">
+                  I help small businesses level up their online presence with clean, modern websites.
+                </p>
+                <p className="text-lg italic">
+                  You've already built something real. I'm just here to make sure your website shows that.
+                </p>
+              </div>
             </CardContent>
           </Card>
         </div>

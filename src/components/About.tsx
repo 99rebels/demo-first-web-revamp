@@ -39,7 +39,7 @@ const About = () => {
                   "
                 </div>
                 <p className="text-xl leading-relaxed mb-6 pt-8">
-                  Hey — I'm the solo developer behind 99rebels. I'm 18 and in my fifth year of school, but I've been building websites for years. I started this project because I noticed a lot of great businesses were being held back by websites that didn't reflect the quality of their work.
+                  I'm the solo developer behind 99rebels. I'm 18 and in my fifth year of school, but I've been building websites for years. I started this project because I noticed a lot of great businesses were being held back by websites that didn't reflect the quality of their work.
                 </p>
                 <p className="text-xl leading-relaxed mb-6">
                   So now, I find those sites, rebuild them (free), and show you what your business could look like online — without asking for anything upfront. If you like it, we talk. If not, no hard feelings.
