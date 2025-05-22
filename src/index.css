@@ -109,12 +109,104 @@
   }
 }
 
+/* Animation Keyframes */
 @keyframes float {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
 }
 
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes slide-up-fade-in {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
 .animate-float {
   animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.animate-slide-up-fade-in {
+  animation: slide-up-fade-in 0.8s ease-out forwards;
+}
+
+/* Depth effect for hero headers */
+.depth-header {
+  position: relative;
+  z-index: 10;
+}
+
+.depth-header::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 10px;
+  background-color: rgba(59, 130, 246, 0.15);
+  border-radius: 50%;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+.depth-header::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 4px;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.8), transparent);
+  z-index: -1;
+}
+
+/* Style for content sections that fade in on scroll */
+.fade-in {
+  animation: fade-in 1s ease forwards;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Glass card effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+}
+
+/* 3D text effect for special headlines */
+.text-3d {
+  text-shadow: 
+    0px 1px 0px rgba(255, 255, 255, 0.5),
+    0px 2px 0px rgba(0, 0, 0, 0.1),
+    0px 3px 5px rgba(0, 0, 0, 0.05);
 }

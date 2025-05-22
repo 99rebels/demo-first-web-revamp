@@ -1,12 +1,13 @@
 
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,11 +44,38 @@ const Navbar = () => {
 
         {/* Desktop menu */}
         <nav className="hidden md:flex items-center gap-6">
-          <Link to="/" className="text-gray-700 hover:text-rebels-blue transition-colors">
+          <Link 
+            to="/" 
+            className={`text-gray-700 hover:text-rebels-blue transition-colors relative group ${
+              location.pathname === '/' ? 'text-rebels-blue font-medium' : ''
+            }`}
+          >
             Home
+            <span className={`absolute bottom-[-4px] left-0 w-0 h-0.5 bg-rebels-blue transition-all duration-300 group-hover:w-full ${
+              location.pathname === '/' ? 'w-full' : ''
+            }`}></span>
           </Link>
-          <Link to="/contact" className="text-gray-700 hover:text-rebels-blue transition-colors">
+          <Link 
+            to="/why" 
+            className={`text-gray-700 hover:text-rebels-blue transition-colors relative group ${
+              location.pathname === '/why' ? 'text-rebels-blue font-medium' : ''
+            }`}
+          >
+            Why I Do This
+            <span className={`absolute bottom-[-4px] left-0 w-0 h-0.5 bg-rebels-blue transition-all duration-300 group-hover:w-full ${
+              location.pathname === '/why' ? 'w-full' : ''
+            }`}></span>
+          </Link>
+          <Link 
+            to="/contact" 
+            className={`text-gray-700 hover:text-rebels-blue transition-colors relative group ${
+              location.pathname === '/contact' ? 'text-rebels-blue font-medium' : ''
+            }`}
+          >
             Contact
+            <span className={`absolute bottom-[-4px] left-0 w-0 h-0.5 bg-rebels-blue transition-all duration-300 group-hover:w-full ${
+              location.pathname === '/contact' ? 'w-full' : ''
+            }`}></span>
           </Link>
           <Button asChild variant="outline" className="border-rebels-blue text-rebels-blue hover:bg-rebels-blue hover:text-white">
             <a href="mailto:Rian@99rebels.com">Get in Touch</a>
@@ -60,14 +88,21 @@ const Navbar = () => {
             <div className="flex flex-col py-4">
               <Link 
                 to="/" 
-                className="px-6 py-3 hover:bg-gray-50 text-gray-700" 
+                className={`px-6 py-3 hover:bg-gray-50 ${location.pathname === '/' ? 'text-rebels-blue font-medium bg-gray-50' : 'text-gray-700'}`}
                 onClick={() => setIsOpen(false)}
               >
                 Home
               </Link>
               <Link 
+                to="/why" 
+                className={`px-6 py-3 hover:bg-gray-50 ${location.pathname === '/why' ? 'text-rebels-blue font-medium bg-gray-50' : 'text-gray-700'}`}
+                onClick={() => setIsOpen(false)}
+              >
+                Why I Do This
+              </Link>
+              <Link 
                 to="/contact" 
-                className="px-6 py-3 hover:bg-gray-50 text-gray-700" 
+                className={`px-6 py-3 hover:bg-gray-50 ${location.pathname === '/contact' ? 'text-rebels-blue font-medium bg-gray-50' : 'text-gray-700'}`}
                 onClick={() => setIsOpen(false)}
               >
                 Contact
