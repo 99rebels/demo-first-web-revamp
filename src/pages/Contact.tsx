@@ -54,10 +54,10 @@ const ContactPage = () => {
                     </div>
                     <h3 className="text-2xl font-medium mb-3 bg-gradient-to-r from-rebels-blue to-rebels-darkblue bg-clip-text text-transparent">Email</h3>
                     <a 
-                      href="mailto:Rian@99rebels.com" 
+                      href="mailto:rian@99rebels.com" 
                       className="text-rebels-blue hover:text-rebels-darkblue transition-colors text-lg relative group"
                     >
-                      Rian@99rebels.com
+                      rian@99rebels.com
                       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-rebels-blue transition-all duration-300 group-hover:w-full"></span>
                     </a>
                   </CardContent>

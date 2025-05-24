@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -46,6 +45,9 @@ const Navbar = () => {
           <Link to="/" className="text-gray-700 hover:text-rebels-blue transition-colors">
             Home
           </Link>
+          <Link to="/why" className="text-gray-700 hover:text-rebels-blue transition-colors">
+            Why I Do This
+          </Link>
           <Link to="/contact" className="text-gray-700 hover:text-rebels-blue transition-colors">
             Contact
           </Link>
@@ -64,6 +66,13 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Home
+              </Link>
+              <Link 
+                to="/why" 
+                className="px-6 py-3 hover:bg-gray-50 text-gray-700" 
+                onClick={() => setIsOpen(false)}
+              >
+                Why I Do This
               </Link>
               <Link 
                 to="/contact" 

@@ -38,7 +38,7 @@ const Footer = () => {
                 <ul className="space-y-2">
                   <li>
                     <a href="mailto:Rian@99rebels.com" className="text-gray-600 hover:text-rebels-blue transition-colors">
-                      Rian@99rebels.com
+                      rian@99rebels.com
                     </a>
                   </li>
                   <li>
@@ -46,6 +46,9 @@ const Footer = () => {
                       +353 85 227 9887
                     </a>
                   </li>
+                  <li><p className="text-gray-600 mt-2">
+                99rebels is a brand of corehings Ltd
+              </p></li>
                 </ul>
               </div>
             </div>

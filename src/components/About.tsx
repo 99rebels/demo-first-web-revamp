@@ -35,11 +35,9 @@ const About = () => {
           <Card className={`border-0 shadow-xl transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <CardContent className="p-8 md:p-12 bg-gradient-to-br from-white to-[#f0f7ff]">
               <div className="relative">
-                <div className="absolute top-0 left-0 w-16 h-16 -mt-6 -ml-6 flex items-center justify-center rounded-full bg-rebels-blue text-white text-3xl font-bold">
-                  "
-                </div>
+                
                 <p className="text-xl leading-relaxed mb-6 pt-8">
-                  I'm the solo developer behind 99rebels. I'm 18 and in my fifth year of school, but I've been building websites for years. I started this project because I noticed a lot of great businesses were being held back by websites that didn't reflect the quality of their work.
+                  I'm the solo developer behind 99rebels. I started this project because I noticed a lot of great businesses were being held back by websites that didn't reflect the quality of their work.
                 </p>
                 <p className="text-xl leading-relaxed mb-6">
                   So now, I find those sites, rebuild them (free), and show you what your business could look like online — without asking for anything upfront. If you like it, we talk. If not, no hard feelings.
