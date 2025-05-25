@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -42,12 +41,14 @@ const Hero = () => {
         </div>
         
         <div className={`mt-16 md:mt-24 max-w-4xl mx-auto rounded-xl overflow-hidden transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0 shadow-2xl shadow-rebels-darkblue/20' : 'opacity-0 translate-y-10'}`}>
-          <div className="aspect-[16/9] bg-gradient-to-br from-rebels-blue/10 to-[#e0eaff] flex items-center justify-center relative overflow-hidden">
-            <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMzQjgyRjYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0aDR2MWgtNHYtMXptMCAzaDR2MWgtNHYtMXptMCAzaDR2MWgtNHYtMXptLTkgM2g0djFoLTR2LTF6bTYgMGg0djFoLTR2LTF6bTMtNmg0djFoLTR2LTF6bTAtM2g0djFoLTR2LTF6bTAtM2g0djFoLTR2LTF6Ii8+PC9nPjwvZz48L3N2Zz4=')]"></div>
-            <div className="text-center p-12 relative z-10">
-              <p className="text-2xl font-medium text-rebels-darkblue">Demo Showcase Image</p>
-              <p className="text-rebels-blue/70 mt-2">Website Before/After Comparison</p>
-            </div>
+          <div className="aspect-[16/9] relative w-full">
+            <iframe
+              src="https://www.loom.com/embed/9e09a72445d746549e276a9731d13004?sid=43ab5938-7b5d-4243-8d37-6df101f209c9"
+              frameBorder="0"
+              allowFullScreen
+              className="absolute top-0 left-0 w-full h-full rounded-xl"
+              title="99rebels Demo Video"
+            ></iframe>
           </div>
         </div>
       </div>
