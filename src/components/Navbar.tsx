@@ -50,14 +50,17 @@ const Navbar = () => {
           <Link to="/" className="text-gray-700 hover:text-rebels-blue transition-colors">
             Home
           </Link>
-          <Link to="/why" className="text-gray-700 hover:text-rebels-blue transition-colors">
-            Why I Do This
+          <Link to="/services" className="text-gray-700 hover:text-rebels-blue transition-colors">
+            Services
+          </Link>
+          <Link to="/about" className="text-gray-700 hover:text-rebels-blue transition-colors">
+            About
           </Link>
           <Link to="/contact" className="text-gray-700 hover:text-rebels-blue transition-colors">
             Contact
           </Link>
           <Button asChild variant="outline" className="border-rebels-blue text-rebels-blue hover:bg-rebels-blue hover:text-white">
-            <a href="mailto:Rian@99rebels.com">Get in Touch</a>
+            <a href="mailto:rian@99rebels.com">Get in Touch</a>
           </Button>
         </nav>
 
@@ -65,34 +68,41 @@ const Navbar = () => {
         {isOpen && (
           <div className="absolute top-full left-0 right-0 bg-white shadow-md md:hidden animate-fade-in">
             <div className="flex flex-col py-4">
-              <Link 
-                to="/" 
-                className="px-6 py-3 hover:bg-gray-50 text-gray-700" 
+              <Link
+                to="/"
+                className="px-6 py-3 hover:bg-gray-50 text-gray-700"
                 onClick={() => setIsOpen(false)}
               >
                 Home
               </Link>
-              <Link 
-                to="/why" 
-                className="px-6 py-3 hover:bg-gray-50 text-gray-700" 
+              <Link
+                to="/services"
+                className="px-6 py-3 hover:bg-gray-50 text-gray-700"
                 onClick={() => setIsOpen(false)}
               >
-                Why I Do This
+                Services
               </Link>
-              <Link 
-                to="/contact" 
-                className="px-6 py-3 hover:bg-gray-50 text-gray-700" 
+              <Link
+                to="/about"
+                className="px-6 py-3 hover:bg-gray-50 text-gray-700"
+                onClick={() => setIsOpen(false)}
+              >
+                About
+              </Link>
+              <Link
+                to="/contact"
+                className="px-6 py-3 hover:bg-gray-50 text-gray-700"
                 onClick={() => setIsOpen(false)}
               >
                 Contact
               </Link>
               <div className="px-6 py-3">
-                <Button 
-                  asChild 
+                <Button
+                  asChild
                   className="w-full bg-rebels-blue hover:bg-rebels-darkblue"
                   onClick={() => setIsOpen(false)}
                 >
-                  <a href="mailto:Rian@99rebels.com">Get in Touch</a>
+                  <a href="mailto:rian@99rebels.com">Get in Touch</a>
                 </Button>
               </div>
             </div>

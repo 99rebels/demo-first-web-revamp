@@ -12,21 +12,21 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    name: "Sarah Johnson",
-    business: "Bloom & Wild Florist",
-    quote: "I was blown away when I received the demo site. It was exactly what my business needed, and I didn't even have to explain what I wanted!",
+    name: "James O'Sullivan",
+    business: "O'Sullivan & Partners — Family Law",
+    quote: "Our old website looked like it was from 2010. Since the redesign, we've seen a noticeable increase in consultation requests.",
     stars: 5
   },
   {
-    name: "Mike Reynolds",
-    business: "Reynolds Electrical",
-    quote: "As a busy electrician, I never had time to sort out my website. 99rebels showed me what was possible before I spent a cent. Now I'm getting calls every day.",
+    name: "Sarah McCarthy",
+    business: "McCarthy Commercial Solicitors",
+    quote: "The AI chatbot feature has been a game-changer. It handles basic enquiries 24/7, and we're capturing leads we would have missed before.",
     stars: 5
   },
   {
-    name: "Emma Clarke",
-    business: "The Daily Grind Café",
-    quote: "The new website captures the vibe of our café perfectly. The process was so easy and the results speak for themselves.",
+    name: "David Brennan",
+    business: "Brennan Criminal Defence",
+    quote: "Professional, responsive, and they understood exactly what a law firm needs. The new site gives potential clients confidence from the first click.",
     stars: 5
   }
 ];
@@ -57,18 +57,18 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="section relative bg-gradient-to-b from-white to-[#eef7ff] overflow-hidden">
+    <section className="section relative bg-gradient-to-b from-white to-gray-50 overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-rebels-blue/5 animate-float"></div>
-        <div className="absolute bottom-40 right-10 w-96 h-96 rounded-full bg-rebels-lightblue/10 animate-float" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-1/2 left-1/3 w-48 h-48 rounded-full bg-rebels-blue/5 animate-float" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-gray-200/30 animate-float"></div>
+        <div className="absolute bottom-40 right-10 w-96 h-96 rounded-full bg-gray-300/20 animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/2 left-1/3 w-48 h-48 rounded-full bg-gray-200/30 animate-float" style={{ animationDelay: '1s' }}></div>
       </div>
       
       <div className="container mx-auto relative z-10">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-center mb-16 bg-gradient-to-r from-rebels-blue to-rebels-darkblue bg-clip-text text-transparent">
-            What Clients Are Saying
+            What Law Firms Are Saying
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -85,12 +85,12 @@ const Testimonials = () => {
               >
                 <Card className="border-0 h-full bg-white/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                   <CardContent className="p-8 flex flex-col h-full">
-                    <div className="flex mb-4 text-rebels-blue">
+                    <div className="flex mb-4 text-rebels-gold">
                       {[...Array(5)].map((_, i) => (
-                        <StarIcon 
-                          key={i} 
-                          size={16} 
-                          className={i < testimonial.stars ? 'fill-rebels-blue' : 'text-gray-300'} 
+                        <StarIcon
+                          key={i}
+                          size={16}
+                          className={i < testimonial.stars ? 'fill-rebels-gold text-rebels-gold' : 'text-gray-300'}
                         />
                       ))}
                     </div>

@@ -30,7 +30,7 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow pt-28 pb-16 bg-gradient-to-b from-rebels-blue/10 via-white to-[#f0f7ff]">
+      <main className="flex-grow pt-28 pb-16 bg-gradient-to-b from-gray-50 via-white to-gray-100">
         <section id="contact-section" className="section">
           <div className="container mx-auto">
             <div className="max-w-4xl mx-auto">
@@ -39,22 +39,22 @@ const ContactPage = () => {
                   <h1 className="inline-block mb-3 bg-gradient-to-r from-rebels-blue to-rebels-darkblue bg-clip-text text-transparent relative z-10">
                     Let's talk.
                   </h1>
-                  <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-40 h-3 bg-rebels-blue/10 rounded-full blur-md"></div>
+                  <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-40 h-3 bg-gray-300/50 rounded-full blur-md"></div>
                 </div>
                 <p className="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
-                  If I've been in touch and you're checking things out — welcome. I'm the person behind 99rebels, a small web dev studio focused on building better sites for small businesses. If you've received a walkthrough video or just want to ask a question, feel free to reach out.
+                  If you'd like a free, practical review of your current website, send us your details and we'll come back with clear recommendations — no obligation.
                 </p>
               </div>
               
               <div className={`flex justify-center gap-8 transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                 <Card className="border-0 shadow-xl transform hover:scale-105 transition-all duration-300 backdrop-blur-sm bg-white/80">
                   <CardContent className="p-8 flex flex-col items-center text-center">
-                    <div className="w-20 h-20 rounded-full bg-gradient-to-r from-rebels-blue to-rebels-darkblue flex items-center justify-center mb-6 mt-4 shadow-lg animate-float">
-                      <Mail className="text-white" size={30} />
+                    <div className="w-20 h-20 rounded-full bg-rebels-navy flex items-center justify-center mb-6 mt-4 shadow-lg animate-float ring-2 ring-rebels-gold/40">
+                      <Mail className="text-rebels-gold" size={30} />
                     </div>
                     <h3 className="text-2xl font-medium mb-3 bg-gradient-to-r from-rebels-blue to-rebels-darkblue bg-clip-text text-transparent">Email</h3>
-                    <a 
-                      href="mailto:rian@99rebels.com" 
+                    <a
+                      href="mailto:rian@99rebels.com"
                       className="text-rebels-blue hover:text-rebels-darkblue transition-colors text-lg relative group"
                     >
                       rian@99rebels.com
@@ -65,12 +65,12 @@ const ContactPage = () => {
 
                 <Card className="border-0 shadow-xl transform hover:scale-105 transition-all duration-300 backdrop-blur-sm bg-white/80">
                   <CardContent className="p-8 flex flex-col items-center text-center">
-                    <div className="w-20 h-20 rounded-full bg-gradient-to-r from-rebels-blue to-rebels-darkblue flex items-center justify-center mb-6 mt-4 shadow-lg animate-float" style={{ animationDelay: "1s" }}>
-                      <Phone className="text-white" size={30} />
+                    <div className="w-20 h-20 rounded-full bg-rebels-navy flex items-center justify-center mb-6 mt-4 shadow-lg animate-float ring-2 ring-rebels-gold/40" style={{ animationDelay: "1s" }}>
+                      <Phone className="text-rebels-gold" size={30} />
                     </div>
                     <h3 className="text-2xl font-medium mb-3 bg-gradient-to-r from-rebels-blue to-rebels-darkblue bg-clip-text text-transparent">Text or WhatsApp</h3>
-                    <a 
-                      href="tel:+353852279887" 
+                    <a
+                      href="tel:+353852279887"
                       className="text-rebels-blue hover:text-rebels-darkblue transition-colors text-lg relative group"
                     >
                       +353 85 227 9887
@@ -80,8 +80,8 @@ const ContactPage = () => {
                 </Card>
               </div>
               
-              <Card className="border-0 shadow-xl mt-16 max-w-2xl mx-auto transition-all duration-700 delay-400 bg-gradient-to-r from-rebels-blue to-rebels-darkblue text-white backdrop-filter backdrop-blur-lg overflow-hidden relative group transform hover:translate-y-[-5px] hover:shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-r from-rebels-blue/30 to-rebels-darkblue/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <Card className="border-0 shadow-xl mt-16 max-w-2xl mx-auto transition-all duration-700 delay-400 bg-rebels-slate text-white backdrop-filter backdrop-blur-lg overflow-hidden relative group transform hover:translate-y-[-5px] hover:shadow-2xl">
+                <div className="absolute inset-0 bg-rebels-slateLight/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute top-0 left-0 right-0 h-1 bg-white/30"></div>
                 <CardContent className="p-8 text-center relative">
                   <h3 className="text-2xl font-medium mb-4 flex items-center justify-center gap-2">
@@ -90,7 +90,10 @@ const ContactPage = () => {
                     <span className="w-8 h-1 bg-white/50 rounded-full"></span>
                   </h3>
                   <p className="text-lg leading-relaxed">
-                    I'm a solo developer — no sales teams, no spam. Just genuine work and open communication.
+                    I'm a solo developer specialising in law firm websites. You'll work directly with me — no account managers, no outsourcing. Just focused expertise and clear communication.
+                  </p>
+                  <p className="text-lg leading-relaxed mt-4 text-white/90">
+                    Your website should reflect the professionalism of your practice. We're here to help make that happen.
                   </p>
                 </CardContent>
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/30"></div>

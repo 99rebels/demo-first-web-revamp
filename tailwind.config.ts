@@ -70,6 +70,12 @@ export default {
 					lightblue: '#93C5FD',
 					gray: '#F3F4F6',
 					darkgray: '#6B7280',
+					navy: '#1e293b',
+					navyDeep: '#0f172a',
+					gold: '#d4a853',
+					goldLight: '#f5e6c8',
+					slate: '#475569',
+					slateLight: '#64748b',
 				}
 			},
 			borderRadius: {

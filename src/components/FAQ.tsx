@@ -41,37 +41,28 @@ const FAQ = () => {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1" className="border-b border-gray-200">
                 <AccordionTrigger className="text-xl font-medium py-6 hover:text-rebels-blue transition-colors">
-                  Do you only work with tradies?
+                  Do you only work with law firms?
                 </AccordionTrigger>
                 <AccordionContent className="text-lg pb-6 text-gray-700">
-                  Nope — I focus on small businesses of all types. Trades are just where I've been focusing lately, since a lot of them don't have time to chase down web help.
+                  Yes — we specialise exclusively in websites for legal professionals. This focus allows us to understand the unique needs of law firms, from compliance considerations to client intake optimisation.
                 </AccordionContent>
               </AccordionItem>
-              
+
               <AccordionItem value="item-2" className="border-b border-gray-200">
                 <AccordionTrigger className="text-xl font-medium py-6 hover:text-rebels-blue transition-colors">
-                  How did you find my business?
+                  What makes a good law firm website?
                 </AccordionTrigger>
                 <AccordionContent className="text-lg pb-6 text-gray-700">
-                  I look for websites that seem outdated or hard to use — then I rebuild them with modern design and best practices. If I send you a version, it's because I genuinely thought I could help.
+                  A great law firm website balances professionalism with approachability. It should clearly communicate your practice areas, make it easy for potential clients to get in touch, and establish trust through clean design and compelling content.
                 </AccordionContent>
               </AccordionItem>
-              
+
               <AccordionItem value="item-3" className="border-b border-gray-200">
                 <AccordionTrigger className="text-xl font-medium py-6 hover:text-rebels-blue transition-colors">
-                  How much does this cost?
+                  What are the AI features you offer?
                 </AccordionTrigger>
                 <AccordionContent className="text-lg pb-6 text-gray-700">
-                  Nothing up front. The demo is free. If you like what you see, we can talk about pricing and options — no pressure either way.
-                </AccordionContent>
-              </AccordionItem>
-              
-              <AccordionItem value="item-4" className="border-b border-gray-200">
-                <AccordionTrigger className="text-xl font-medium py-6 hover:text-rebels-blue transition-colors">
-                  Is this legit?
-                </AccordionTrigger>
-                <AccordionContent className="text-lg pb-6 text-gray-700">
-                  Yes — and this site is here to help prove that. I'm a solo developer, and I do all the work myself. You'll never be talking to a bot or agency middleman.
+                  We can integrate AI-powered chatbots that answer common client questions 24/7, automated FAQ systems that reduce repetitive enquiries, and smart intake forms that qualify leads before they reach you — all without providing legal advice.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
